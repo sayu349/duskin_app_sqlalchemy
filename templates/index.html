@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>add_customer</title>
+</head>
+<body>
+    <h1>顧客追加ページ</h1>
+    <hr>
+    <form method="POST">
+        {{ form.customer_id.label }}{{ form.customer_id(size=20) }}<br>
+        {{ form.customer_name.label }}{{ form.customer_name(size=20) }}<br>
+        {{ form.tel.label }}{{ form.tel(size=20) }}<br>
+        {{ form.submit() }}
+</body>
+</html>
